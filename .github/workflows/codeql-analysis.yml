@@ -3,10 +3,10 @@ name: "Code scanning - Action"
 on:
   push:
     branches:
-      - main2
+      - main
   pull_request:
     branches:
-      - main2
+      - main
 
 jobs:
   codeql-build:
