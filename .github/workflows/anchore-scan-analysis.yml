@@ -3,10 +3,10 @@ name: "Docker Image Scan"
 on:
   push:
     branches:
-      - main2
+      - main
   pull_request:
     branches:
-      - main2
+      - main
 
 jobs:
   build:
@@ -26,4 +26,3 @@ jobs:
         uses: github/codeql-action/upload-sarif@v1
         with:
           sarif_file: ${{ steps.scan.outputs.sarif }}
-
